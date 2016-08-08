@@ -22,12 +22,14 @@ I decided to go for a version with authentication, but
 without categories handling. This means I will have two 
 models - `User` and `Task`.
 
-`User` model I made without email for simplicity. Authentication 
-will be handled via token field assigned randomly to each 
-user and stored in the database. Here I made a simple 
-implementation by myself, but one can use already made libraries
-like Knock, Diverse, Authlogic and others for JWT based 
-authentication. Probably a smart idea would be to cache the
+`User` model I made without email field for simplicity. 
+Authentication  will be handled via token field assigned ONLY
+once randomly to each user during the creation of the user and stored 
+in the database. Better practice would be to generate this token
+each time the user logs in, and remove it on logout + add expiration time.
+Here I made a simple implementation by myself, but one can use 
+already made libraries like Knock, Diverse, Authlogic and others for 
+JWT based authentication. Probably a smart idea would be to cache the
 token in the Redis so that server will not call database on
 each request checking if token is correct and/or to which user
 it is assigned.
