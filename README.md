@@ -56,6 +56,8 @@ Get all users:
 
 Still TODO (ironically), just for fun:
 * testing with RSpec
+* use fixtures for unit testing
+* refactor unit tests for controllers
 * deploy to Heroku and test the production mode
 * make a simple client in VueJS
 * implement categories
