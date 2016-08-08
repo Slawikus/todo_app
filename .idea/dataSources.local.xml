@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails todo_app: test" uuid="a9acc977-d6b5-4e77-957c-595a9d98d5f9">
+      <auth-required>false</auth-required>
+    </data-source>
+    <data-source name="Rails todo_app: development" uuid="3ea2c236-29c8-407e-a735-b829329301bd">
+      <auth-required>false</auth-required>
+    </data-source>
+  </component>
+</project>

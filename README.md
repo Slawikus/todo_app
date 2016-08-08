@@ -18,6 +18,8 @@ Add few gems to Gemfile:
 
 `gem 'active_model_serializers' # model serializer`
 
+`gem 'rack-cors' # cross domain access`
+
 I decided to go for a version with authentication, but 
 without categories handling. This means I will have two 
 models - `User` and `Task`.
@@ -54,11 +56,14 @@ Get all users:
 
 `curl -H "Authorization: Token token=TOKEN" http://localhost:3000/users`
 
+Deployed to Heroku:
+
+`https://guarded-peak-24627.herokuapp.com`
+
 Still TODO (ironically), just for fun:
 * testing with RSpec
 * use fixtures for unit testing
 * refactor unit tests for controllers
-* deploy to Heroku and test the production mode
 * make a simple client in VueJS
 * implement categories
 
